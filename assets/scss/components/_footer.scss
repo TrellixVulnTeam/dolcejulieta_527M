@@ -1,0 +1,18 @@
+.footer{
+    color: $colorFuente;
+    font-weight: 500;
+    font-size: 1rem;
+    height: 70%;
+    text-decoration: none;
+    transition: 500ms;
+
+    &_shadow{
+        box-shadow: 0px 28px 38px 18px rgba(0,0,0,0.75);
+    }
+    
+    & a:hover{
+        color: $colorFuente;
+        background-color: $colorFondoHover;
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,18 @@
+.portada_contacto{
+    background-image: url(../portadas/portada-contacto/contacto.jpg);
+    background-size: cover;
+    height: 20rem;
+    opacity: 0.6;
+
+    & h1{
+        background: none;
+        font-weight: 500;
+        color: black;
+        text-align: center;
+    }
+}
+
+label, input{
+ font-weight: 500 ;
+ text-align: left;
+}

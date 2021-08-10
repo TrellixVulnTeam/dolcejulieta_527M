@@ -1,0 +1,128 @@
+header {
+  height: 6rem; }
+
+.header__logo {
+  color: hotpink;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-decoration: none;
+  display: inline; }
+  .header__logo:hover {
+    color: lightpink; }
+
+.nav {
+  justify-content: flex-end; }
+  .nav_item {
+    margin: 0 2rem; }
+  .nav_link {
+    color: hotpink;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+    transition: 500ms; }
+  .nav_link:hover {
+    background-color: lavenderblush;
+    color: hotpink;
+    transform: scale(1.2); }
+
+.footer {
+  color: hotpink;
+  font-weight: 500;
+  font-size: 1rem;
+  height: 70%;
+  text-decoration: none;
+  transition: 500ms; }
+  .footer_shadow {
+    box-shadow: 0px 28px 38px 18px rgba(0, 0, 0, 0.75); }
+  .footer a:hover {
+    color: hotpink;
+    background-color: lavenderblush;
+    transform: scale(1.1); }
+
+.portada {
+  background-image: url(../portadas/portada-index/portada3.jpg);
+  background-size: cover;
+  opacity: 0.6;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .portada h1, .portada p {
+    background: none;
+    font-weight: 500;
+    color: black;
+    text-align: center; }
+
+.portada_dulce {
+  background-image: url(../portadas/portada-dulce/portada.jpg);
+  background-size: cover;
+  height: 20rem;
+  opacity: 0.6; }
+  .portada_dulce h1 {
+    background: none;
+    font-weight: 500;
+    color: black;
+    text-align: center; }
+
+.portada_salado {
+  background-image: url(../portadas/portada-salado/pan.jpg);
+  background-size: cover;
+  height: 20rem;
+  opacity: 0.6; }
+  .portada_salado h1 {
+    background: none;
+    font-weight: 500;
+    color: black;
+    text-align: center; }
+
+.portada_recetas {
+  background-image: url(../portadas/portada-recetas/recetas.jpg);
+  background-size: cover;
+  height: 20rem;
+  opacity: 0.6; }
+  .portada_recetas h1 {
+    background: none;
+    font-weight: 500;
+    color: black;
+    text-align: center; }
+
+.portada_sobreMi {
+  background-image: url(../portadas/portada-sobre-mi/portada.jpg);
+  background-size: cover;
+  height: 20rem;
+  opacity: 0.6; }
+  .portada_sobreMi h1 {
+    background: none;
+    font-weight: 500;
+    color: black;
+    text-align: center; }
+
+.portada_contacto {
+  background-image: url(../portadas/portada-contacto/contacto.jpg);
+  background-size: cover;
+  height: 20rem;
+  opacity: 0.6; }
+  .portada_contacto h1 {
+    background: none;
+    font-weight: 500;
+    color: black;
+    text-align: center; }
+
+label, input {
+  font-weight: 500;
+  text-align: left; }
+
+* {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  color: hotpink; }
+
+main {
+  padding: 0; }
+
+.fotos {
+  width: 25rem;
+  height: 25rem; }

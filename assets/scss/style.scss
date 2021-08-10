@@ -1,0 +1,49 @@
+//imports
+
+@import "utilities/variables";
+@import "components/header";
+@import "components/footer";
+@import "pages/index";
+@import "pages/dulce";
+@import "pages/salado";
+@import "pages/recetas";
+@import "pages/sobre-mi";
+@import "pages/contacto";
+
+
+*{
+    font-family: $fuente;
+    font-weight: 400;
+    color: $colorFuente ;
+}
+
+
+main{
+    padding: 0;
+}
+
+.fotos{
+    width: 25rem;
+    height: 25rem;
+}
+
+
+
+
+    
+
+    
+
+
+    
+
+    
+
+    
+ 
+
+
+
+
+
+
