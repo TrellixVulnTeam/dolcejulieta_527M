@@ -36,4 +36,15 @@ header{
         color: $colorFuente;
         transform: scale(1.2);
     }
+
+}
+
+.navbar-boton{
+    padding: 0;
+    background-color: lavenderblush;
+}
+
+.navbar-toggler-icono{
+    width: 1rem ;
+    height: 1rem;
 }
