@@ -1,7 +1,13 @@
+@import url(../utilities/_mixins.scss);
+
 header{
     height: 6rem;
+
 }
 
+.header_shadow{
+    box-shadow: 0px 6px 9px 0px rgba(0,0,0,0.75);
+}
 .header__logo{
     color: $colorFuente;
     font-weight: 700;
@@ -22,13 +28,7 @@ header{
     }
 
     &_link{
-        color: $colorFuente;
-        font-weight: 500;
-        font-size: 1rem;
-        text-decoration: none;
-        margin: 0 1rem;
-        padding: 0 0.5rem;
-        transition: 500ms;
+        @include links (hotpink , none , 1rem , 500 , 0 0.5rem , 0 1rem , none ,  500ms , none )    
     }
     
     &_link:hover{
@@ -40,7 +40,7 @@ header{
 }
 
 .navbar-boton{
-    padding: 0;
+    padding: 0.1rem 0.5rem;
     background-color: lavenderblush;
 }
 

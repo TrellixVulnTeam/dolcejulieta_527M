@@ -13,6 +13,52 @@
             font-weight: 500;
             color: $colorh1;
             text-align: center;
-
         }
+}
+
+.presentacion{
+    @include divs ( $colorFondoHover , none , 4rem , 0 , 0.1rem solid $colorFuente , none );
+
+    & p{
+        color: $colorh1;
+        font-weight: 400;
+    }
+}
+
+span{
+    text-decoration: underline;
+    color: $colorh1;
+    font-weight: 500;
+}
+
+.redes{
+
+    &_wpp{
+        @include divs (none , linear-gradient(45deg, #E5FFCC 0%, #1EBEA5 50%, #00E676 70%, #D0E9EA 90%, #EDF8F5 95%, #ffffff 100%), 1rem ,  0 1rem , 0 , 0px 0px 9px 4px rgba(0,0,0,0.49) )
+    }
+
+    &_ig{
+        @include divs ( none , linear-gradient(45deg, #f09433 0%, #e6683c 40%, #dc2743 50%, #cc2366 85%, #bc1888 100%)  , 1rem , 0 1rem , 0 , 0px 0px 9px 4px rgba(0,0,0,0.49) )
+    }
+
+    & p{
+        @include links ( black , none , 1rem , 700 , 0 , 0 , 0 , 0 , none );
+    }
+
+    &_link{
+        height: 2rem;
+        width: 2rem;
+    }
+    
+}
+
+
+.img{
+    max-height: 8rem;
+    margin: 1.5rem;
+    transition: 500ms;
+
+    &:hover{
+        transform: scale(1.1);
+    }
 }

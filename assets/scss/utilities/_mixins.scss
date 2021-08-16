@@ -1,0 +1,19 @@
+@mixin links ( $colorFuente , $colorfondo , $TamanioFuente , $pesoFuente , $padding , $marging , $borde , $transicion , $decoracion ){
+    color: $colorFuente;
+    background-color:  $colorfondo;
+    font-size: $TamanioFuente;
+    font-weight: $pesoFuente;
+    padding: $padding;
+    margin: $marging;
+    transition: $transicion;
+    text-decoration: $decoracion;
+}
+
+@mixin divs ( $colorfondo , $imgFondo , $padding , $marging , $borde , $sombra ){
+    background-color:  $colorfondo;
+    background-image: $imgFondo;
+    padding: $padding;
+    margin: $marging;
+    border: $borde;
+    box-shadow: $sombra;
+}

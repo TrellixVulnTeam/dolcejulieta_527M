@@ -1,6 +1,7 @@
 //imports
 
 @import "utilities/variables";
+@import "utilities/mixins";
 @import "components/header";
 @import "components/footer";
 @import "pages/index";
@@ -11,10 +12,13 @@
 @import "pages/contacto";
 
 
+
 *{
     font-family: $fuente;
-    font-weight: 400;
+    font-weight: 300;
     color: $colorFuente ;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -23,8 +27,8 @@ main{
 }
 
 .fotos{
-    width: 50rem;
-    height: 50rem;
+    width: 40 rem;
+    height:40 rem;
 }
 
 
