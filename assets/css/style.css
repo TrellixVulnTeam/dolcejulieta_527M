@@ -55,7 +55,7 @@ header {
     transform: scale(1.1); }
 
 .portada {
-  background-image: url(../../../img/portadas/portada-index/portada3.jpg);
+  background-image: url(../../img/portadas/portada-index/portada3.jpg);
   background-size: cover;
   opacity: 0.6;
   height: 20rem;
@@ -123,7 +123,7 @@ span {
     transform: scale(1.1); }
 
 .portada_dulce {
-  background-image: url(../../../img/portadas/portada-dulce/portada.jpg);
+  background-image: url(../../img/portadas/portada-dulce/portada.jpg);
   background-size: cover;
   height: 20rem;
   opacity: 0.6; }
@@ -134,7 +134,7 @@ span {
     text-align: center; }
 
 .portada_salado {
-  background-image: url(../../../img/portadas/portada-salado/pan.jpg);
+  background-image: url(../../img/portadas/portada-salado/pan.jpg);
   background-size: cover;
   height: 20rem;
   opacity: 0.6; }
@@ -145,7 +145,7 @@ span {
     text-align: center; }
 
 .portada_recetas {
-  background-image: url(../../../img/portadas/portada-recetas/recetas.jpg);
+  background-image: url(../../img/portadas/portada-recetas/recetas.jpg);
   background-size: cover;
   height: 20rem;
   opacity: 0.6; }
@@ -159,7 +159,7 @@ video {
   max-height: 30rem; }
 
 .portada_sobreMi {
-  background-image: url(../../../img/portadas/portada-sobre-mi/portada.jpg);
+  background-image: url(../../img/portadas/portada-sobre-mi/portada.jpg);
   background-size: cover;
   height: 20rem;
   opacity: 0.6; }
@@ -170,7 +170,7 @@ video {
     text-align: center; }
 
 .portada_contacto {
-  background-image: url(../../../img/portadas/portada-contacto/contacto.jpg);
+  background-image: url(../../img/portadas/portada-contacto/contacto.jpg);
   background-size: cover;
   height: 20rem;
   opacity: 0.6; }
