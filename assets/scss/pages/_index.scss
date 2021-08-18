@@ -34,11 +34,11 @@ span{
 .redes{
 
     &_wpp{
-        @include divs (none , linear-gradient(45deg, #E5FFCC 0%, #1EBEA5 50%, #00E676 70%, #D0E9EA 90%, #EDF8F5 95%, #ffffff 100%), 1rem ,  0 1rem , 0 , 0px 0px 9px 4px rgba(0,0,0,0.49) )
+        @include divs (none , linear-gradient(45deg, #E5FFCC 0%, #1EBEA5 50%, #00E676 70%, #D0E9EA 90%, #EDF8F5 95%, #ffffff 100%), 0 ,  0 1rem , 0 , 0px 0px 9px 4px rgba(0,0,0,0.49) )
     }
 
     &_ig{
-        @include divs ( none , linear-gradient(45deg, #f09433 0%, #e6683c 40%, #dc2743 50%, #cc2366 85%, #bc1888 100%)  , 1rem , 0 1rem , 0 , 0px 0px 9px 4px rgba(0,0,0,0.49) )
+        @include divs ( none , linear-gradient(45deg, #f09433 0%, #e6683c 40%, #dc2743 50%, #cc2366 85%, #bc1888 100%)  , 0 , 0 1rem , 0 , 0px 0px 9px 4px rgba(0,0,0,0.49) )
     }
 
     & p{
@@ -54,8 +54,8 @@ span{
 
 
 .img{
-    max-height: 8rem;
-    margin: 1.5rem;
+    max-height: 6rem;
+    margin: 1rem;
     transition: 500ms;
 
     &:hover{
