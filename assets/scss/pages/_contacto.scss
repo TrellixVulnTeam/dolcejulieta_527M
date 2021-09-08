@@ -1,5 +1,5 @@
 .portada_contacto{
-    background-image: url(../../../img/portadas/portada-contacto/contacto.jpg);
+    background-image: url(../../../img/img-contacto/contacto.jpg);
     background-size: cover;
     height: 20rem;
     opacity: 0.6;
@@ -12,7 +12,23 @@
     }
 }
 
-label, input{
- font-weight: 500 ;
- text-align: left;
+label{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 500 ;
+    text-align: left;
+    margin: 2rem;
+}
+
+.boton{
+    padding: 0.2rem;
+    border: 0.2rem solid hotpink;
+    border-radius: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: $colorFuente ;
+
+    &:hover{
+        color: $colorHoverLogo;
+    }
 }

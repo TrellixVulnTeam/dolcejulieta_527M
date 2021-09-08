@@ -1,24 +1,22 @@
 @import url(../utilities/_mixins.scss);
 header {
-  height: 6rem; }
-
-.header_shadow {
+  height: 5.7rem;
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.75); }
-
-.header__logo {
-  color: hotpink;
-  font-weight: 700;
-  font-size: 2.5rem;
-  text-decoration: none;
-  display: inline; }
-  .header__logo:hover {
-    color: lightpink; }
-
-.nav {
-  justify-content: flex-end; }
-  .nav_item {
-    margin: 0 2rem; }
-  .nav_link {
+  header a {
+    color: hotpink;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-decoration: none;
+    display: inline; }
+    header a:hover {
+      color: lightpink; }
+  header button {
+    padding: 0.1rem 0.5rem;
+    background-color: lavenderblush; }
+    header button span {
+      width: 1rem;
+      height: 1rem; }
+  header li a {
     color: hotpink;
     background-color: none;
     font-size: 1rem;
@@ -27,35 +25,49 @@ header {
     margin: 0 1rem;
     transition: 500ms;
     text-decoration: none; }
-  .nav_link:hover {
-    background-color: lavenderblush;
-    color: hotpink;
-    transform: scale(1.2); }
+    header li a:hover {
+      background-color: lavenderblush;
+      color: hotpink;
+      transform: scale(1.2); }
 
-.navbar-boton {
-  padding: 0.1rem 0.5rem;
-  background-color: lavenderblush; }
-
-.navbar-toggler-icono {
-  width: 1rem;
-  height: 1rem; }
-
-.footer {
-  color: hotpink;
-  font-weight: 500;
-  font-size: 1rem;
+footer {
   height: 70%;
-  text-decoration: none;
-  transition: 500ms; }
-  .footer_shadow {
-    box-shadow: 0px -6px 9px 1px rgba(0, 0, 0, 0.49); }
-  .footer a:hover {
-    color: hotpink;
-    background-color: lavenderblush;
+  background-color: hotpink; }
+  footer p {
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration: none; }
+  footer svg {
+    height: 4rem;
+    width: 4rem;
+    transition: 500ms; }
+  footer svg:hover {
+    stroke: white;
+    stroke-linecap: round;
     transform: scale(1.1); }
 
+.carousel {
+  max-height: 30rem;
+  max-width: 30rem; }
+
+.carousel-indicators [data-bs-target] {
+  background-color: hotpink;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%; }
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  fill: hotpink; }
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-chevron-left' width='48' height='48' viewBox='0 0 24 24' stroke-width='5' stroke='%23FF69B4' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpolyline points='15 6 9 12 15 18' /%3E%3C/svg%3E"); }
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-chevron-right' width='48' height='48' viewBox='0 0 24 24' stroke-width='5' stroke='%23FF69B4' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpolyline points='9 6 15 12 9 18' /%3E%3C/svg%3E"); }
+
 .portada {
-  background-image: url(../../../img/portadas/portada-index/portada3.jpg);
+  background-image: url(../../img/img-index/portada3.jpg);
   background-size: cover;
   opacity: 0.6;
   height: 20rem;
@@ -69,61 +81,71 @@ header {
     color: black;
     text-align: center; }
 
+section li {
+  margin: 1rem 3rem; }
+  section li a {
+    color: lavenderblush;
+    background-color: hotpink;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 3rem 1rem;
+    margin: 0 3rem;
+    transition: 500ms;
+    text-decoration: none;
+    transition: 800ms; }
+    section li a:hover {
+      background-image: radial-gradient();
+      color: lavenderblush;
+      transform: scale(1.2); }
+
 .presentacion {
-  background-color: lavenderblush;
+  background-color: white;
   background-image: none;
   padding: 4rem;
   margin: 0;
-  border: 0.1rem solid hotpink;
+  border: none;
   box-shadow: none; }
   .presentacion p {
     color: black;
     font-weight: 400; }
 
-span {
-  text-decoration: underline;
-  color: black;
-  font-weight: 500; }
-
-.redes_wpp {
-  background-color: none;
-  background-image: linear-gradient(45deg, #E5FFCC 0%, #1EBEA5 50%, #00E676 70%, #D0E9EA 90%, #EDF8F5 95%, #ffffff 100%);
-  padding: 0;
-  margin: 0 1rem;
-  border: 0;
-  box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.49); }
-
-.redes_ig {
-  background-color: none;
-  background-image: linear-gradient(45deg, #f09433 0%, #e6683c 40%, #dc2743 50%, #cc2366 85%, #bc1888 100%);
-  padding: 0;
-  margin: 0 1rem;
-  border: 0;
-  box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.49); }
-
-.redes p {
-  color: black;
-  background-color: none;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 0;
-  margin: 0;
-  transition: 0;
-  text-decoration: none; }
-
-.redes_link {
-  height: 2rem;
-  width: 2rem; }
-
-.img {
-  max-height: 6rem;
-  margin: 1rem;
-  transition: 500ms; }
-  .img:hover {
-    transform: scale(1.1); }
+.redes {
+  margin: 8rem 0; }
+  .redes_wpp {
+    background-color: none;
+    background-image: linear-gradient(45deg, #E5FFCC 0%, #1EBEA5 50%, #00E676 70%, #D0E9EA 90%, #EDF8F5 95%, #ffffff 100%);
+    padding: 0;
+    margin: 3rem 1rem;
+    border: 0;
+    box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.49);
+    transition: 500ms; }
+    .redes_wpp:hover {
+      transform: scale(1.05); }
+  .redes_ig {
+    background-color: none;
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 40%, #dc2743 50%, #cc2366 85%, #bc1888 100%);
+    padding: 0;
+    margin: 1rem;
+    border: 0;
+    box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.49);
+    transition: 500ms; }
+    .redes_ig:hover {
+      transform: scale(1.05); }
+  .redes p {
+    color: black;
+    background-color: none;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    transition: 0;
+    text-decoration: none; }
+  .redes img {
+    max-height: 6rem;
+    margin: 1rem; }
 
 .portada_dulce {
-  background-image: url(../../../img/portadas/portada-dulce/portada.jpg);
+  background-image: url(../../img/img-dulce/portada.jpg);
   background-size: cover;
   height: 20rem;
   opacity: 0.6; }
@@ -134,7 +156,7 @@ span {
     text-align: center; }
 
 .portada_salado {
-  background-image: url(../../../img/portadas/portada-salado/pan.jpg);
+  background-image: url(../../img/img-salado/pan.jpg);
   background-size: cover;
   height: 20rem;
   opacity: 0.6; }
@@ -145,7 +167,7 @@ span {
     text-align: center; }
 
 .portada_recetas {
-  background-image: url(../../../img/portadas/portada-recetas/recetas.jpg);
+  background-image: url(../../img/img-recetas/recetas.jpg);
   background-size: cover;
   height: 20rem;
   opacity: 0.6; }
@@ -159,7 +181,7 @@ video {
   max-height: 30rem; }
 
 .portada_sobreMi {
-  background-image: url(../../../img/portadas/portada-sobre-mi/portada.jpg);
+  background-image: url(../../img/img-sobre-mi/portada.jpg);
   background-size: cover;
   height: 20rem;
   opacity: 0.6; }
@@ -170,7 +192,7 @@ video {
     text-align: center; }
 
 .portada_contacto {
-  background-image: url(../../../img/portadas/portada-contacto/contacto.jpg);
+  background-image: url(../../img/img-contacto/contacto.jpg);
   background-size: cover;
   height: 20rem;
   opacity: 0.6; }
@@ -180,9 +202,56 @@ video {
     color: black;
     text-align: center; }
 
-label, input {
+label {
+  display: flex;
+  justify-content: flex-start;
   font-weight: 500;
-  text-align: left; }
+  text-align: left;
+  margin: 2rem; }
+
+.boton {
+  padding: 0.2rem;
+  border: 0.2rem solid hotpink;
+  border-radius: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: hotpink; }
+  .boton:hover {
+    color: lightpink; }
+
+.portada_error {
+  background-image: url(../../img/img-404/error1.jpg);
+  background-size: cover;
+  opacity: 0.6;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .portada_error h1 {
+    background: none;
+    font-weight: 500;
+    color: black;
+    text-align: center; }
+
+section {
+  margin: 5rem 0; }
+  section li {
+    margin: 1rem 3rem; }
+    section li a {
+      color: lavenderblush;
+      background-color: hotpink;
+      font-size: 3rem;
+      font-weight: 500;
+      padding: 3rem 1rem;
+      margin: 0 3rem;
+      transition: 500ms;
+      text-decoration: none;
+      transition: 800ms; }
+      section li a:hover {
+        background-image: radial-gradient();
+        color: lavenderblush;
+        transform: scale(1.2); }
 
 * {
   font-family: "Spartan", sans-serif;
@@ -193,7 +262,3 @@ label, input {
 
 main {
   padding: 0; }
-
-.fotos {
-  width: 40 rem;
-  height: 40 rem; }

@@ -1,0 +1,26 @@
+
+@import "../utilities/variables";
+
+.carousel{
+    max-height: 30rem;
+    max-width: 30rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: $colorFuente;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    fill: $colorFuente;
+}
+
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-chevron-left' width='48' height='48' viewBox='0 0 24 24' stroke-width='5' stroke='%23FF69B4' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpolyline points='15 6 9 12 15 18' /%3E%3C/svg%3E");
+} 
+
+.carousel-control-next-icon{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-chevron-right' width='48' height='48' viewBox='0 0 24 24' stroke-width='5' stroke='%23FF69B4' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpolyline points='9 6 15 12 9 18' /%3E%3C/svg%3E");
+}

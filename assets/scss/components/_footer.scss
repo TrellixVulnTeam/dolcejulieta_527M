@@ -1,18 +1,24 @@
-.footer{
-    color: $colorFuente;
-    font-weight: 500;
-    font-size: 1rem;
+footer{
     height: 70%;
-    text-decoration: none;
-    transition: 500ms;
+    background-color: hotpink;
 
-    &_shadow{
-        box-shadow: 0px -6px 9px 1px rgba(0,0,0,0.49);
+    p{
+        color: white;
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+    svg{
+        height: 4rem;
+        width: 4rem;
+        transition: 500ms;
     }
     
-    & a:hover{
-        color: $colorFuente;
-        background-color: $colorFondoHover;
+    svg:hover{
+        stroke: white;
+        stroke-linecap: round;
         transform: scale(1.1);
     }
+
 }

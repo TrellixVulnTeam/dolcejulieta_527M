@@ -1,50 +1,41 @@
 @import url(../utilities/_mixins.scss);
 
 header{
-    height: 6rem;
-
-}
-
-.header_shadow{
+    height: 5.7rem;
     box-shadow: 0px 6px 9px 0px rgba(0,0,0,0.75);
-}
-.header__logo{
-    color: $colorFuente;
-    font-weight: 700;
-    font-size: 2.5rem;
-    text-decoration: none;
-    display: inline;
 
-    &:hover{
-        color:$colorHoverLogo;
-    }
-}
-
-.nav{
-    justify-content: flex-end;
-
-    &_item{
-        margin: 0 2rem;
-    }
-
-    &_link{
-        @include links (hotpink , none , 1rem , 500 , 0 0.5rem , 0 1rem , none ,  500ms , none )    
-    }
-    
-    &_link:hover{
-        background-color: $colorFondoHover;
+    a{
         color: $colorFuente;
-        transform: scale(1.2);
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-decoration: none;
+        display: inline;
+
+        &:hover{
+            color:$colorHoverLogo;
+        }
     }
 
-}
+    button{
+        padding: 0.1rem 0.5rem;
+        background-color: lavenderblush;
 
-.navbar-boton{
-    padding: 0.1rem 0.5rem;
-    background-color: lavenderblush;
-}
+            span{
+                width: 1rem ;
+                height: 1rem;
+            }
+    }
 
-.navbar-toggler-icono{
-    width: 1rem ;
-    height: 1rem;
+    li{
+        a{
+            @include links (hotpink , none , 1rem , 500 , 0 0.5rem , 0 1rem , none ,  500ms , none );    
+        
+            &:hover{
+                background-color: $colorFondoHover;
+                color: $colorFuente;
+                transform: scale(1.2);
+            }
+
+        }
+    }
 }

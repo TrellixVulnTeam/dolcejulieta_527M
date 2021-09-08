@@ -4,12 +4,14 @@
 @import "utilities/mixins";
 @import "components/header";
 @import "components/footer";
+@import "components/carousel";
 @import "pages/index";
 @import "pages/dulce";
 @import "pages/salado";
 @import "pages/recetas";
 @import "pages/sobre-mi";
 @import "pages/contacto";
+@import "pages/404";
 
 
 
@@ -24,11 +26,6 @@
 
 main{
     padding: 0;
-}
-
-.fotos{
-    width: 40 rem;
-    height:40 rem;
 }
 
 

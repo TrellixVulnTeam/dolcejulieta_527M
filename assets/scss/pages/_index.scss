@@ -1,5 +1,5 @@
 .portada{
-    background-image: url(../../../img/portadas/portada-index/portada3.jpg);
+    background-image: url(../../../img/img-index/portada3.jpg);
     background-size: cover;
     opacity: 0.6;
     height: 20rem;
@@ -8,7 +8,7 @@
     align-items: center;
     flex-direction: column;
 
-        & h1, p{
+        h1, p{
             background: none;
             font-weight: 500;
             color: $colorh1;
@@ -16,49 +16,62 @@
         }
 }
 
-.presentacion{
-    @include divs ( $colorFondoHover , none , 4rem , 0 , 0.1rem solid $colorFuente , none );
+section{
+    li{
+        margin: 1rem 3rem;
 
-    & p{
+        a{
+            @include links ($colorFondoHover , $colorFuente , 3rem , 500 , 3rem 1rem , 0 3rem , none ,  500ms , none ); 
+            transition: 800ms;   
+        
+            &:hover{
+                background-image: radial-gradient();
+                color: $colorFondoHover;
+                transform: scale(1.2);
+            }
+
+        }
+
+    }
+}
+
+.presentacion{
+    @include divs ( white , none , 4rem , 0 , none , none );
+
+    p{
         color: $colorh1;
         font-weight: 400;
     }
 }
 
-span{
-    text-decoration: underline;
-    color: $colorh1;
-    font-weight: 500;
-}
-
 .redes{
+    margin: 8rem 0;
 
     &_wpp{
-        @include divs (none , linear-gradient(45deg, #E5FFCC 0%, #1EBEA5 50%, #00E676 70%, #D0E9EA 90%, #EDF8F5 95%, #ffffff 100%), 0 ,  0 1rem , 0 , 0px 0px 9px 4px rgba(0,0,0,0.49) )
+        @include divs (none , linear-gradient(45deg, #E5FFCC 0%, #1EBEA5 50%, #00E676 70%, #D0E9EA 90%, #EDF8F5 95%, #ffffff 100%), 0 ,  3rem 1rem , 0 , 0px 0px 9px 4px rgba(0,0,0,0.49) );
+        transition: 500ms;
+        
+        &:hover{
+            transform: scale(1.05)
+        }
     }
 
     &_ig{
-        @include divs ( none , linear-gradient(45deg, #f09433 0%, #e6683c 40%, #dc2743 50%, #cc2366 85%, #bc1888 100%)  , 0 , 0 1rem , 0 , 0px 0px 9px 4px rgba(0,0,0,0.49) )
+        @include divs ( none , linear-gradient(45deg, #f09433 0%, #e6683c 40%, #dc2743 50%, #cc2366 85%, #bc1888 100%)  , 0 , 1rem , 0 , 0px 0px 9px 4px rgba(0,0,0,0.49) );
+        transition: 500ms;
+        
+        &:hover{
+            transform: scale(1.05)
+        }
     }
 
-    & p{
+    p{
         @include links ( black , none , 1rem , 700 , 0 , 0 , 0 , 0 , none );
     }
 
-    &_link{
-        height: 2rem;
-        width: 2rem;
+    img{
+        max-height: 6rem;
+        margin: 1rem;
     }
     
-}
-
-
-.img{
-    max-height: 6rem;
-    margin: 1rem;
-    transition: 500ms;
-
-    &:hover{
-        transform: scale(1.1);
-    }
 }
