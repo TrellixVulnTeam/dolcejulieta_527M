@@ -1,0 +1,13 @@
+.portada_pascua{
+    background-image: url(../../../img/img-pascua/portada-pascua.jpg);
+    background-size: cover;
+    height: 20rem;
+    opacity: 0.6;
+
+    & h1{
+        background: none;
+        font-weight: 500;
+        color: $colorh1;
+        text-align: center;
+    }
+}
